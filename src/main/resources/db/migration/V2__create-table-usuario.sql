@@ -1,4 +1,4 @@
-create table usuario(
+create table usuarios(
     id bigint not null auto_increment,
     nombre varchar(100) not null,
     correo_electonico varchar(50) not null,
@@ -6,5 +6,5 @@ create table usuario(
     perfil bigint not null,
 
     primary key(id),
-    constraint fk_usuario_perfil foreign key (perfil) references perfil(id)
+    constraint fk_usuario_perfil foreign key (perfil) references perfiles(id)
 );
